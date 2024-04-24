@@ -100,4 +100,24 @@
   .text-container {
     text-align: justify;
   }
+
+ 
+}
+@media screen and (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* Stack videos vertically on smaller screens */
+  }
+
+  .details-container.color-container {
+    max-width: 100%; /* Set maximum width for containers */
+  }
+
+  .video-container iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sr-only, .cont-text{
+    display: none;
+  }
 }
